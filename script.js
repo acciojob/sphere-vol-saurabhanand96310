@@ -6,7 +6,7 @@ function volume_sphere() {
 	if(r>0){
 		let pi=3.14;
 		let v=4/3*pi*r*r*r;
-		volume.value=v;
+		volume.value=v.toFix(4);
 	}else{
 		volume.value=NaN;
 	}
